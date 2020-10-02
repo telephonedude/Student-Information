@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="Midterm_Act.viewwindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="View Student Information"
+	Height="500"
+	Width="450"
+	WindowStartupLocation="CenterScreen"
+ResizeMode="NoResize">
+
+	<Grid>
+		<Grid.Background>
+			<ImageBrush
+				ImageSource="/Pictures/addinfo.png"
+				Stretch="UniformToFill" />
+		</Grid.Background>
+		<TextBlock
+			x:Name="idbox"
+			Background="#FFFCFCFC"
+			Width="266"
+			Height="26.000000000000028"
+			Grid.Column="0"
+			Grid.Row="0"
+			VerticalAlignment="Top"
+			Margin="0,85,25,0"
+			HorizontalAlignment="Right"
+			TextAlignment="Justify" />
+		<TextBlock
+			Width="266"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,119,25,0"
+			x:Name="lastbox"
+			Background="#FFFCFCFC"
+			TextAlignment="Justify" />
+		<TextBlock
+			Width="266"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,153,25,0"
+			x:Name="firstbox"
+			Background="#FFFCFCFC"
+			TextAlignment="Justify" />
+		<TextBlock
+			Width="266"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,187,25,0"
+			x:Name="midbox"
+			Background="#FFFCFCFC"
+			TextAlignment="Justify" />
+		<TextBlock
+			Width="266"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,221,25,0"
+			x:Name="coursebox"
+			Background="#FFFCFCFC"
+			TextAlignment="Justify" />
+		<TextBlock
+			Width="266"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,255,25,0"
+			x:Name="lvlbox"
+			Background="#FFFCFCFC"
+			TextAlignment="Justify" />
+		<TextBlock
+			x:Name="monthbox"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			VerticalAlignment="Top"
+			Width="71"
+			HorizontalAlignment="Right"
+			Margin="0,289,220,0"
+			Background="#FFFCFCFC"
+			TextAlignment="Justify" />
+		<TextBlock
+			Width="266"
+			Height="26"
+			x:Name="agebox"
+			Background="#FFFCFCFC"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,349,25,0" />
+		<Label
+			Content="ID Number:"
+			Height="26"
+			Width="83"
+			RenderTransformOrigin="0.5809,0.5352"
+			Background="{x:Null}"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="41.5,89,0,0"
+			FontFamily="Lucida Console" />
+		<Label
+			Content="Family Name:"
+			Background="{x:Null}"
+			FontFamily="Lucida Console"
+			Height="26"
+			Width="99"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="42,123,0,0" />
+		<Label
+			Content="First Name:"
+			Background="{x:Null}"
+			FontFamily="Lucida Console"
+			Height="26"
+			Width="99"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="42,157,0,0" />
+		<Label
+			Content="Middle Name:"
+			Background="{x:Null}"
+			FontFamily="Lucida Console"
+			Height="26"
+			Width="103"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="42,191,0,0" />
+		<Label
+			Height="26"
+			Width="83"
+			RenderTransformOrigin="0.5688,0.5521"
+			Background="{x:Null}"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="41.5,225,0,0"
+			FontFamily="Lucida Console"
+			Content="Course:" />
+		<Label
+			Content="Year Level:"
+			Background="{x:Null}"
+			FontFamily="Lucida Console"
+			Width="93"
+			Height="26"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="42,259,0,0" />
+		<Label
+			Background="{x:Null}"
+			FontFamily="Lucida Console"
+			Height="26"
+			Width="93"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="42,293,0,0"
+			Content="Birth Date:" />
+		<Label
+			Height="26"
+			Width="83"
+			Content="Age:"
+			Background="{x:Null}"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="41.5,353,0,0"
+			FontFamily="Lucida Console" />
+		<Button
+			Width="64"
+			Height="30"
+			Content="Next"
+			x:Name="next"
+			Click="next_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Bottom"
+			Margin="0,0,53.9999999999999,20" />
+		<Button
+			Height="30"
+			Content="Back"
+			x:Name="back"
+			Width="64"
+			Click="back_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="51.5,0,0,20" />
+		<Button
+			x:Name="exit"
+			Click="exit_Click"
+			Content="Exit Window"
+			Width="82"
+			Height="30"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="178,0,0,20" />
+		<Label
+			Height="25"
+			Content="Month"
+			Width="74"
+			Background="{x:Null}"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,320,221,0"
+			FontFamily="Lucida Console" />
+		<TextBlock
+			x:Name="daybox"
+			Height="26"
+			Width="71"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,289,120,0"
+			Background="#FFFCFCFC" />
+		<TextBlock
+			x:Name="yearbox"
+			Height="26"
+			Width="71"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,289,25,0"
+			Background="#FFFCFCFC" />
+		<Label
+			Width="74"
+			Height="25"
+			Content="Day"
+			Background="{x:Null}"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,320,118.5,0"
+			FontFamily="Lucida Console" />
+		<Label
+			Height="25"
+			Content="Year"
+			Width="74"
+			Background="{x:Null}"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,320,23.5,0"
+			FontFamily="Lucida Console" />
+	</Grid>
+</Window>

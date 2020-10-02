@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="Midterm_Act.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="Student Information"
+	Height="400"
+	Width="800"
+	WindowStartupLocation="CenterScreen"
+ResizeMode="NoResize">
+	<Grid>
+		<Grid.Background>
+			<ImageBrush
+				ImageSource="/Pictures/meninfo.png"
+				Stretch="UniformToFill" />
+		</Grid.Background>
+		<Button
+			Width="170"
+			Height="50"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Content="Add Student Information"
+			x:Name="addstudent"
+			Click="addstudent_Click"
+			Margin="380,106.5,0,0"
+			Grid.Column="0"
+			Background="#FFED3434"
+			BorderBrush="#FFD3AD15"
+			BorderThickness="3,3,3,3"
+			FontFamily="Lucida Console"
+			FontSize="10" />
+		<Button
+			Height="50"
+			Width="170"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,106.5,35,0"
+			Content="View Student Information"
+			x:Name="viewstudent"
+			Click="viewstudent_Click"
+			Background="#FFED3434"
+			BorderBrush="#FFD3AD15"
+			BorderThickness="3,3,3,3"
+			FontFamily="Lucida Console"
+			FontSize="10" />
+		<Button
+			Height="50"
+			Width="170"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Content="Edit Student Information"
+			x:Name="editstudent"
+			Click="editstudent_Click"
+			Margin="380,212,0,0"
+			Grid.Column="0"
+			Background="#FFED3434"
+			BorderBrush="#FFD3AD15"
+			BorderThickness="3,3,3,3"
+			FontFamily="Lucida Console"
+			FontSize="10" />
+		<Button
+			Width="170"
+			Height="50"
+			Content="Delete Student Information"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,212,35,0"
+			x:Name="delstudent"
+			Click="delstudent_Click"
+			Background="#FFED3434"
+			BorderBrush="#FFD3AD15"
+			BorderThickness="3,3,3,3"
+			FontFamily="Lucida Console"
+			FontSize="10" />
+	</Grid>
+</Window>
